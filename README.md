@@ -54,7 +54,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 `Not a valid key: '%s'" % keydescr)`
 `Not a valid key: '\e[d'`
 `Not a valid key: '\e[c'`
-
+`module 'collections' has no attribute 'Callable'`
 
 
 
