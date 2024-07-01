@@ -1,3 +1,71 @@
+## pyreadline3 fork
+
+This project is a fork of [pyreadline3](https://github.com/pyreadline3/pyreadline3).
+
+**Background:**
+- **pyreadline3**: An updated version of [pyreadline](https://github.com/pyreadline/pyreadline), which was created when pyreadline became inactive in 2014.
+- **Current Status**: Unfortunately, pyreadline3 has also become inactive, with pull requests pending since 2022.
+
+**Needed Updates:**
+- The official [GNU readline](https://tiswww.case.edu/php/chet/readline/rltop.html), is still under activate development and includes ANSI escape sequences that neither pyreadline nor pyreadline3 currently support.
+- A package that I use, uses the official GNU readline and therefore uses ansi escape sequences that neither pyreadline nor pyreadline3 had defined.
+
+Therefore, the only purpose of this fork is to add these needed keys.
+
+This does not in any way make this fork a complete implementation of readline, it only adds minor things to pyreadline3.
+
+Any bug fixes or new features should probably still be sent to pyreadline3.
+
+
+## Use:
+
+
+#### To use this version of pyreadline3:
+
+uninstall the old version:
+```shell
+pip uninstall pyreadline3
+```
+
+install this version:
+```shell
+pip install git+https://github.com/jplusc/pyreadline3.git
+```
+
+
+#### missing git for windows?
+```shell
+choco upgrade git -y
+```
+
+#### missing choco?
+Seriously, if you have to use windows, use a package manager to make it less painfull. https://chocolatey.org/
+
+from powershell:
+```shell
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+```
+
+
+
+### Some search keywords to lead others having trouble here:
+
+`make_KeyPress_from_keydescr`
+`Not a valid key: '%s'" % keydescr)`
+`Not a valid key: '\e[d'`
+`Not a valid key: '\e[c'`
+
+
+
+
+
+
+
+
+
+## original readme below:
+---
+
 # pyreadline3
 
 [![PyPi Badge](https://img.shields.io/pypi/v/pyreadline3)](https://pypi.org/project/pyreadline3/) 
