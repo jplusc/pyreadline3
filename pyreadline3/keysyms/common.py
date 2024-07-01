@@ -45,6 +45,8 @@ validkey = set(
 escape_sequence_to_special_key = {
     "\\e[a": "up",
     "\\e[b": "down",
+    "\\e[c": "right",
+    "\\e[d": "left",
     "del": "delete",
 }
 
